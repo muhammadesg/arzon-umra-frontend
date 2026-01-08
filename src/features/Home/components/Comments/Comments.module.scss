@@ -1,0 +1,70 @@
+.comments {
+    margin-bottom: 100px;
+
+    &__card {
+        background-color: #EDEDED;
+        padding: 20px;
+        max-width: 400px;
+        border-radius: 20px;
+        min-height: 220px;
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18.75px;
+            text-align: left;
+        }
+    }
+
+    &__logo {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36.31px;
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+    }
+
+    &__card_profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        margin-bottom: 20px;
+
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18.75px;
+            text-align: left;
+        }
+    }
+}
+
+.more_button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    opacity: .5;
+    margin-top: 10px;
+
+    background-color: none;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+    svg {
+        width: 12px;
+        height: 12px;
+    }
+}

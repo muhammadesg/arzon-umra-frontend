@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 100;
+  src: url("/assets/fonts/Lato/Lato-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/assets/fonts/Lato/Lato-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/assets/fonts/Lato/Lato-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/assets/fonts/Lato/Lato-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/assets/fonts/Lato/Lato-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/Lato/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/assets/fonts/Lato/Lato-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/assets/fonts/Lato/Lato-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RG-StandardBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/RG-StandardBold.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --family: "Montserrat";
+  --white: #fff;
+  --black: #000000;
+  --primary-color: #00A819;
+  --gray: #B9B9B9;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:768px) {
+  h2 {
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 19.2px !important;
+    letter-spacing: 0% !important;
+    text-transform: none !important;
+  }
+}
+
+@media screen and (max-width:1350px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0px 20px;
+  }
+}

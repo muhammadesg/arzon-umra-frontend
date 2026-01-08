@@ -1,0 +1,56 @@
+.partners {
+  margin-bottom: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  @media screen and (min-width:2000px) {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    padding-bottom: 60px;
+  }
+  &__cards, &__card {
+    display: none;
+  }
+
+  .marquee {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+
+    &__inner {
+      display: flex;
+      gap: 10px;
+      animation: marquee 15s linear infinite;
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .partners__card {
+    width: 250px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: #b6b6b61a;
+    padding: 25px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    min-width: 250px;
+
+    img {
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+    }
+  }
+}

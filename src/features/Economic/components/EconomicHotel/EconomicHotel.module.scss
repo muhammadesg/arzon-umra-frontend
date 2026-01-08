@@ -1,0 +1,174 @@
+.economic_hotel {
+    &__banners {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        
+        margin-bottom: 80px;
+
+        @media screen and (max-width:1050px) {
+            gap: 30px;
+        }
+
+        @media screen and (max-width:680px) {
+            flex-direction: column-reverse;
+            align-items: start;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38.4px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        text-align: center;
+
+        margin-bottom: 60px;
+    }
+
+    &__left {
+        h2 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0%;
+
+            margin-bottom: 20px;
+            text-transform: uppercase;
+
+            span {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19.2px;
+                letter-spacing: 0%;
+                opacity: .5;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19.2px;
+            letter-spacing: 0%;
+            
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width:850px) {
+            flex-direction: column-reverse;
+            gap: 10px;
+        }
+
+        @media screen and (max-width:680px) {
+            flex-direction: initial;
+        }
+
+        @media screen and (max-width:580px) {
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+        gap: 16px;
+        
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+
+            @media screen and (max-width:850px) {
+                flex-direction: initial;
+            }
+
+            @media screen and (max-width:680px) {
+                flex-direction: column;
+            }
+
+            @media screen and (max-width:580px) {
+                flex-direction: initial;
+                justify-content: space-evenly;
+            }
+
+            img {
+                max-width: 168px;
+                max-height: 160px;
+                border-radius: 20px;
+
+                @media screen and (max-width:950px) {
+                    max-width: 145px;
+                    max-height: 130px;
+                }
+
+                @media screen and (max-width:850px) {
+                    max-width: 135px;
+                    max-height: 115px;
+                }
+
+                @media screen and (max-width:680px) {
+                    max-width: 168px;
+                    max-height: 160px;
+                }
+
+                @media screen and (max-width:580px) {
+                    max-width: 100%;
+                    max-height: 195px;
+                    object-fit: cover;
+                }
+
+                @media screen and (max-width:480px) {
+                    max-width: 100%;
+                    max-height: 160px;
+                }
+
+                @media screen and (max-width:400px) {
+                    max-width: 100%;
+                    max-height: 140px;
+                }
+
+                @media screen and (max-width:350px) {
+                    max-width: 100%;
+                    max-height: 120px;
+                }
+            }
+        }
+
+        &_big {
+            max-width: 355px;
+            max-height: 330px;
+            border-radius: 20px;
+
+            @media screen and (max-width:950px) {
+                max-width: 300px;
+                max-height: 270px;
+            }
+
+            @media screen and (max-width:850px) {
+                max-width: 280px;
+                max-height: 250px;
+            }
+
+            @media screen and (max-width:680px) {
+                max-width: 355px;
+                max-height: 330px;
+            }
+
+            @media screen and (max-width:580px) {
+                min-width: 100%;
+                max-height: 350px;
+                object-fit: cover;
+            }
+
+            @media screen and (max-width:480px) {
+                max-height: 280px;
+            }
+
+            @media screen and (max-width:350px) {
+                max-height: 200px;
+            }
+        }
+    }
+    
+}

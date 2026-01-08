@@ -1,0 +1,221 @@
+.economic {
+
+    &__banner {
+        position: relative;
+        margin-bottom: 60px;
+
+        @media screen and (max-width:768px) {
+            margin-bottom: 15px;
+        }
+
+        &_img {
+            width: 100%;
+            height: 100%;
+            max-height: 560px;
+            border-radius: 33px;
+            object-fit: cover;
+        }
+
+        &_mb {
+            display: none;
+
+            img {
+                max-width: 50px;
+                max-height: 30px;
+            }
+
+            p {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19.2px;
+                letter-spacing: 0%;
+            }
+
+            @media screen and (max-width:768px) {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                margin-bottom: 20px;
+            }
+        }
+
+        &_inner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0%;
+            top: 0%;
+            border-radius: 33px;
+
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+        }
+
+        &_top {
+            position: absolute;
+            top: 30px;
+            width: 100%;
+            padding: 0px 30px;
+            z-index: 2;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+
+            img {
+                filter: brightness(0) invert(1);
+            }
+
+            img:nth-child(1) {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                
+                max-width: 125px;
+                max-height: 77px;
+            }
+
+            img:nth-child(2) {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                
+                max-width: 220px;
+                max-height: 50px;
+            }
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 76.8px;
+            letter-spacing: 0%;
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            z-index: 2;
+            
+            color: var(--white);
+
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+
+            span {
+                margin-left: 30px;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 42.19px;
+                letter-spacing: 0%;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38.4px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+
+        margin-bottom: 60px;
+
+        @media screen and (max-width:768px) {
+            font-size: 26px;
+            line-height: 28.8px;
+            letter-spacing: 0%;
+            text-transform: none;
+
+            margin-bottom: 20px;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+        gap: 20px;
+
+        margin-bottom: 60px;
+    }
+
+    &__card {
+        border-radius: 22px;
+        border: 1px solid #EBEBEB;
+        max-width: 305px;
+        height: 80px;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        padding: 16px 10px;
+
+        @media screen and (max-width:680px) {
+            max-width: 100%;
+        }
+
+        &_img {
+            background-color: #F3EFEF;
+            border-radius: 50%;
+
+            width: 48px;
+            height: 48px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_text {
+            h2 {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19.2px;
+                letter-spacing: 0%;
+                opacity: 0.5;
+            }
+
+            p {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19.2px;
+                letter-spacing: 0%;
+            }
+        }
+    }
+
+    &__desc {
+        margin-bottom: 60px;
+        h2 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38.4px;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+
+            margin-bottom: 20px;
+            @media screen and (max-width:768px) {
+                text-align: left;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19.2px;
+            letter-spacing: 0%;
+            text-align: center;
+
+            @media screen and (max-width:768px) {
+                text-align: left;
+            }
+        }
+    }
+}
